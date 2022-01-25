@@ -15,6 +15,14 @@ nav {
 	color: #11999E;
 }
 
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+	color: #40514E;
+	font-weight: 300;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #11999E;
+}
 .logo{
 	color: #11999E;
 }
@@ -34,9 +42,9 @@ body {
 
 h1{
 	color: #067f91;
-	font-family: 'Tangerine', cursive;
+	font-family: 'Baloo Chettan 2', cursive;
 	font-size: 8rem;
-	font-weight: bolder;
+	font-weight: 500;
 }	
 
 h1 + p{
@@ -46,9 +54,9 @@ h1 + p{
 }
 h3 {
 	color: #067f91;
-	font-family: 'Tangerine', cursive;
+	font-family: 'Baloo Chettan 2', cursive;
 	font-size: 3rem;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .man-sitting{
@@ -162,17 +170,24 @@ h3 {
 
 /*About Me*/
 #about-me{
-	background: #fff;
+	background: #11999E;
+	color: #fff;
+}
+#about-me h3{
+	color: #fff;
 }
 
+.about-content p{
+	light-height: 1.5;
+	letter-spacing: .1rem;
+	font-weight: 300;
+}
+.tools{
+	margin-top: 5%;
+	border-bottom: 0.5px solid rgba(48,227,202,0.5);
+}
 
 /* Timeline */
-
-* {
-	margin:  0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 .timeline-container {
 	max-width:  1080px;
@@ -192,7 +207,7 @@ h3 {
 }
 
 .center-line {
-	height: 90%!important;
+	height: 89%!important;
 }
 
 .timeline-container .date {
@@ -274,29 +289,23 @@ h3 {
 	margin: 10px 0 17px 0;
 }
 
-.date section .bottom a{
-	text-decoration: none;
-	background: #ff7979;
-	color: #fff;
-	padding: 7px 15px;
-	border-radius: 5px;
-	font-size: 17px;
-	font-weight: 400;
-}
-
 .title, .title ~ span{
 	color: #40514E;
 	font-family: 'Poppins', sans-serif;
 }
 
 .details ~ p{
+	color: #11999E;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	font-weight: 300;
 }
 
 /*Projects */
 
 #project{
 	background: #fff;
+	padding-top: 10%;
 }
 
 .projects:before {
@@ -313,6 +322,9 @@ h3 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.carou-n-h3{
+	margin-top: 5%!important;
+}
 
 
 @media(max-width: 772px){

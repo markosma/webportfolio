@@ -9,6 +9,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +39,7 @@
 							<a class="nav-link" href="#project">Project</a>
 						</li>
 						<li>
-							<a class="nav-link" href="#">Contact Me</a>
+							<a class="nav-link" href="#contact">Contact Me</a>
 						</li> 
 					</ul>
 				</div>
@@ -67,10 +69,10 @@
 		<!-- Title End -->
 
 		<!-- About Me -->
-		<div class="container-fluid text-center p-5 min-vh-100" id="about-me">
+		<div class="container-fluid text-center p-5" id="about-me">
 			<h3>About Me</h3>
-			<div class="row">
-                <div class="col-md-6 order-md-1 pt-5 order-2 pl-5 mr-0">
+			<div class="row about-details">
+                <div class="col-md-6 order-md-1 pt-5 order-2 pl-5 mr-0 about-content">
                     <p class="text-justify">I'm Mark Joseph Osma, an aspiring Web Developer currently staying in Mandaluyong City, Metro Manila Philippines.</p>
                     <p class="text-justify">
                     	I graduated at Technological University of the Philippines - Cavite Campus on 2018. After that, I worked as a Web Support Specialist in a Japanese BPO company.
@@ -80,15 +82,17 @@
                     </p>
                     <p class="text-justify">So far, I'm familiar and knowledgeable in HTML, CSS, and Bootstrap. After the bootcamp, it is expected that I will be knowledgable in MERN stack development.</p>
                 </div>
-                <div class="col-md-6 mb-3 order-md-2 order-1 pt-3 px-5">
-                    <img class="img-fluid rounded-circle me ml-0 pl-0" src="./image/me.png" width="300"/>
+                <div class="col-md-6 mb-3 order-md-2 order-1 pt-5 pr-0">
+                    <img class="img-fluid me ml-0 pl-0 rounded-circle" src="./image/me2.png" width="300"/>
                 </div>
             </div>
 			<!-- Tools Used -->
-				<h3>
-					Tools I used
+		</div>
+			<div class="container-fluid text-center tools">
+				<h3 class="tool-header">
+					Tools
 				</h3>
-			<div class="d-flex align-items-center flex-sm-column mt-3 p-3">
+			<div class="row d-flex align-items-center flex-sm-column p-3 mb-2 inner-tool">
 				<div class="flex-sm-column">
 					<img class="img-fluid" src="./image/logo-html5.png">
 					<img class="img-fluid" src="./image/logo-css3.png">
@@ -99,12 +103,12 @@
 				
 			</div>
 			<!-- Tools Used End -->
-		</div>
+			</div>
 		<!-- About Me End -->
 
 		<!-- Timeline Start -->
 		<div class="pt-3 text-center">
-			<h3>Career Highlights</h3>
+			<h3 class="pt-5">Career Highlights</h3>
 		<div class="timeline-container min-vh-100">
 		<div class="center-line">
 			<!-- <a href="#" class="scroll-icon"><i class="fas fa-code"></i></a> -->
@@ -193,7 +197,7 @@
 				<i class="icon fas fa-star"></i></i>
 				<div class="details">
 					<span class="title">
-						Promoted to Assistant Team Leader
+						Promoted to Assistant TL
 					</span>
 					<span>July 2021</span>
 				</div>
@@ -220,7 +224,7 @@
 		<!-- Projects Start -->
 		<div class="container-fluid text-center" id="project">
 			<h3>Projects</h3>
-		<div class="row d-md-block mt-md-5">
+		<div class="row d-md-block mt-md-5 carou-n-h3">
 			<div class="offset-xl-3 col-xl-6">
 				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -230,7 +234,7 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="projects">
-							<img src="./image/TBA2.jpg" class="d-block w-100" alt="...">
+							<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
 							</div>
 							<div class="carousel-caption d-md-block carousel-details">
 								<h5>E-commerce API</h5>
@@ -239,7 +243,7 @@
 						</div>
 						<div class="carousel-item">
 							<div class="projects">	
-							<img src="./image/TBA2.jpg" class="d-block w-100" alt="...">
+							<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
 							</div>
 							<div class="carousel-caption d-md-block carousel-details">
 								<h5>Capstone 3</h5>
@@ -260,8 +264,47 @@
 		</div>
 	</div>
 		<!-- Projects End -->
-		
 	</main>
+	<!-- Contact Me Start -->
+	<section id="contact">
+		<div class="text-center pt-5">
+					<h2>Contact Me</h2>
+					<div class="row pt-3">
+						<div class="offset-xl-5 col-lg-2 offset-lg-5 offset-md-4 col-md-4 col-sm-10 p-3">
+							<form> 
+								<!-- Name Start -->
+								<div class="form-group">
+								<label for="validationCustom01">Name</label>
+								      <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" required>
+								</div>
+								<!-- Name End -->
+
+								<!-- Email Start-->
+							  <div class="form-group">
+							    <label for="exampleFormControlInput1">Email address</label>
+							    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+							  </div>
+							  <!-- Email end -->
+							  <!-- Message Start -->
+							  <div class="form-group">
+							    <label for="exampleFormControlTextarea1">Message</label>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							  </div>
+							  <!-- Message End -->
+
+							  <button class="btn btn-dark" type="submit">Send Email</button>
+							</form>
+						</div>
+					</div>
+				</div>		
+	</section>
+	<!-- Contact Me End -->
+	<!-- Footer Starts -->
+	<footer id="footer">
+		<div>
+		</div>
+	</footer>
+	<!-- Footer End -->
 				
 
 			
