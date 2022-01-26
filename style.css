@@ -12,6 +12,13 @@ html{
 }
 
 
+body {
+	background: #E4F9F5;
+	overflow: auto;
+
+}
+
+/* Navigation Bar */
 nav {
 	font-family: 'Montserrat', sans-serif;
 	color: #11999E;
@@ -29,11 +36,7 @@ nav {
 	color: #11999E;
 }
 
-body {
-	background: #E4F9F5;
-	overflow: auto;
-
-}
+/* Title Page */
 
 .container-fluid {
 	padding: 3% 10%;
@@ -71,110 +74,111 @@ h3 {
 /* Bubble Effect */
 
 .bubbles{
-  position: absolute;
-  width: 100%;
-  height: 150%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
-  background: transparent;
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+	background: transparent;
 }
 .bubble{
-  position: absolute;
-  bottom: 0;
-  background: radial-gradient( #fff,#666666);
-  border-radius: 50%;
-  opacity: 0.4;
-  animation: flying 10s infinite ease-in;
+	position: absolute;
+	bottom: 0;
+	background: radial-gradient( #fff,#666666);
+	border-radius: 50%;
+	opacity: 0.4;
+	animation: flying 10s infinite ease-in;
 }
 .bubble:nth-child(1){
-  width: 40px;
-  height: 40px;
-  left: 10%;
-  animation-duration: 8s;
+	width: 40px;
+	height: 40px;
+	left: 10%;
+	animation-duration: 8s;
 }
 .bubble:nth-child(2){
-  width: 20px;
-  height: 20px;
-  left: 20%;
-  animation-duration: 5s;
-  /*animation-delay: 1s;*/
+	width: 20px;
+	height: 20px;
+	left: 20%;
+	animation-duration: 5s;
+
 }
 .bubble:nth-child(3){
-  width: 50px;
-  height: 50px;
-  left: 35%;
-  animation-duration: 5s;
-  /*animation-delay: 2s;*/
+	width: 50px;
+	height: 50px;
+	left: 35%;
+	animation-duration: 5s;
+
 }
 .bubble:nth-child(4){
-  width: 80px;
-  height: 80px;
-  left: 50%;
-  animation-duration: 10s;
-  /*animation-delay: 0s;*/
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	animation-duration: 10s;
+
 }
 .bubble:nth-child(5){
-  width: 35px;
-  height: 35px;
-  left: 55%;
-  animation-duration: 6s;
-  /*animation-delay: 1s;*/
+	width: 35px;
+	height: 35px;
+	left: 55%;
+	animation-duration: 6s;
+
 }
 .bubble:nth-child(6){
-  width: 45px;
-  height: 45px;
-  left: 40%;
-  animation-duration: 8s;
-  /*animation-delay: 3s;*/
+	width: 45px;
+	height: 45px;
+	left: 40%;
+	animation-duration: 8s;
+
 }
 .bubble:nth-child(7){
-  width: 25px;
-  height: 25px;
-  left: 75%;
-  animation-duration: 7s;
-  /*animation-delay: 2s;*/
+	width: 25px;
+	height: 25px;
+	left: 75%;
+	animation-duration: 7s;
+
 }
 .bubble:nth-child(8){
-  width: 80px;
-  height: 80px;
-  left: 80%;
-  animation-duration: 6s;
-  /*animation-delay: 1s;*/
+	width: 80px;
+	height: 80px;
+	left: 80%;
+	animation-duration: 6s;
+
 }
 .bubble:nth-child(9){
-  width: 15px;
-  height: 15px;
-  left: 70%;
-  animation-duration: 9s;
-  /*animation-delay: 0s;*/
+	width: 15px;
+	height: 15px;
+	left: 70%;
+	animation-duration: 9s;
+
 }
 .bubble:nth-child(10){
-  width: 40px;
-  height: 40px;
-  left: 25%;
-  animation-duration: 5s;
-  /*animation-delay: 3s;*/
+	width: 40px;
+	height: 40px;
+	left: 25%;
+	animation-duration: 5s;
+
 }
+/* Animation for Bubble Effect */
 @keyframes flying{
-  0%{
-    bottom: -100px;
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(100px);
-  }
-  100%{
-    bottom: 1480px;
-    transform: translateX(-200px);
-  }
+	0%{
+		bottom: 130px;
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(100px);
+	}
+	100%{
+		bottom: 1480px;
+		transform: translateX(-200px);
+	}
 }
 
 /*About Me*/
 #about-me{
 	background: rgb(17,153,158);
-background: linear-gradient(180deg, rgba(17,153,158,1) 95%, rgba(228,249,245,0.5) 100%);
+	background: linear-gradient(180deg, rgba(17,153,158,1) 95%, rgba(228,249,245,0.5) 100%);
 	color: #fff;
 }
 
@@ -317,12 +321,12 @@ background: linear-gradient(180deg, rgba(17,153,158,1) 95%, rgba(228,249,245,0.5
 
 .projects:before {
 	content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .proj-content{
@@ -413,7 +417,7 @@ background: linear-gradient(180deg, rgba(17,153,158,1) 95%, rgba(228,249,245,0.5
 	background: #11999E;
 	border-color: #fff;
 	color: #E4F9F5 ;
-	}
+}
 
 #bt-top{
 	position: fixed;
@@ -479,16 +483,16 @@ background: linear-gradient(180deg, rgba(17,153,158,1) 95%, rgba(228,249,245,0.5
 
 ::-webkit-scrollbar {
 	background: #E4F9F5;
-    width: 12px;
+	width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    border-radius: 100vw;
+	border-radius: 100vw;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #11999E;
+	border-radius: 10px;
+	background: #11999E;
 }
 
 ::-webkit-scrollbar-thumb:hover{
