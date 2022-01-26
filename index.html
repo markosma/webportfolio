@@ -9,8 +9,6 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,31 +22,31 @@
 </head>
 <body>
 	<!-- Nav Bar Start-->
-		<div class="container-fluid text-center navigation-bar">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand logo" href="#home">MJ Osma</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li>
-							<a class="nav-link" href="#about-me">About Me</a>
-						</li>
-						<li>
-							<a class="nav-link" href="#project">Project</a>
-						</li>
-						<li>
-							<a class="nav-link" href="#contact">Contact Me</a>
-						</li> 
-					</ul>
-				</div>
-			</nav>
-	<!-- Nav Bar ends -->
-		</div>
+	<div class="container-fluid text-center navigation-bar" id="top">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand logo" href="#home">MJ Osma</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav ml-auto">
+					<li>
+						<a class="nav-link" href="#about-me">About Me</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#project">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#contact">Contact Me</a>
+					</li> 
+				</ul>
+			</div>
+		</nav>
+		<!-- Nav Bar ends -->
+	</div>
 	<main>
 		<!-- Title -->
-		
+
 		<div class="container-fluid text-center p-3 p-md-0" id="home">
 			<h1>I'm MJ</h1>
 			<p>a web developer</p>
@@ -70,28 +68,30 @@
 
 		<!-- About Me -->
 		<div class="container-fluid text-center p-5" id="about-me">
-			<h3>About Me</h3>
-			<div class="row about-details">
-                <div class="col-md-6 order-md-1 pt-5 order-2 pl-5 mr-0 about-content">
-                    <p class="text-justify">I'm Mark Joseph Osma, an aspiring Web Developer currently staying in Mandaluyong City, Metro Manila Philippines.</p>
-                    <p class="text-justify">
-                    	I graduated at Technological University of the Philippines - Cavite Campus on 2018. After that, I worked as a Web Support Specialist in a Japanese BPO company.
-                    </p>
-                    <p class="text-justify">
-                    	Being in a Japanese company and under the supervision of a Japanese, I learned and adapted their ethics and work culture. We know how hard working and dedicated the Japanese (especially in Customer Engagement) when it comes to their job. They want their work to be perfect, no room for errors or mistakes.
-                    </p>
-                    <p class="text-justify">So far, I'm familiar and knowledgeable in HTML, CSS, and Bootstrap. After the bootcamp, it is expected that I will be knowledgable in MERN stack development.</p>
-                </div>
-                <div class="col-md-6 mb-3 order-md-2 order-1 pt-5 pr-0">
-                    <img class="img-fluid me ml-0 pl-0 rounded-circle" src="./image/me2.png" width="300"/>
-                </div>
-            </div>
+			<div class="row row-cols-1 about-details">
+				<div class="col-md-12 mb-3 pt-1 pr-0">
+					<img class="img-fluid me ml-0 rounded-circle" src="./image/me2.png" width="300"/>
+					<h3 class="pt-3 greet">Hi</h3>
+				</div>
+				<div class="offset-md-2 col-md-8 pt-1 mr-0 about-content text-justify">
+					<p>I'm Mark Joseph Osma, an aspiring Web Developer currently staying in Mandaluyong City, Metro Manila Philippines.</p>
+					<p>
+						I graduated at Technological University of the Philippines - Cavite Campus on 2018. After that, I worked as a Web Support Specialist in a Japanese BPO company.
+					</p>
+					<p>
+						Being in a Japanese company and under the supervision of a Japanese, I learned and adapted their ethics and work culture. We know how hard working and dedicated the Japanese (especially in Customer Engagement) when it comes to their job. They want their work to be perfect, no room for errors or mistakes.
+					</p>
+					<p>
+						So far, I'm familiar and knowledgeable in HTML, CSS, and Bootstrap. After the bootcamp, it is expected that I will be knowledgable in MERN stack development.
+					</p>
+				</div>
+			</div>
 			<!-- Tools Used -->
 		</div>
-			<div class="container-fluid text-center tools">
-				<h3 class="tool-header">
-					Tools
-				</h3>
+		<div class="container-fluid text-center tools">
+			<h3 class="tool-header">
+				Tools
+			</h3>
 			<div class="row d-flex align-items-center flex-sm-column p-3 mb-2 inner-tool">
 				<div class="flex-sm-column">
 					<img class="img-fluid" src="./image/logo-html5.png">
@@ -100,211 +100,257 @@
 					<img class="img-fluid" src="./image/logo-sublime.png">
 					<img class="img-fluid" src="./image/logo-git.png">
 				</div>
-				
+
 			</div>
 			<!-- Tools Used End -->
-			</div>
+		</div>
 		<!-- About Me End -->
 
 		<!-- Timeline Start -->
 		<div class="pt-3 text-center">
-			<h3 class="pt-5">Career Highlights</h3>
-		<div class="timeline-container min-vh-100">
-		<div class="center-line">
-			<!-- <a href="#" class="scroll-icon"><i class="fas fa-code"></i></a> -->
-		</div>
-		<div class="date date-1">
-			<!-- 1st Timeline -->
-			<section>
-				<i class="icon fas fa-certificate"></i>
-				<div class="details">
-					<span class="title">
-						Basic Electricity Installation and Maintenance
-					</span>
-					<span>September 2017 </span>
+			<h3 class="pt-5" id="highlights">Career Highlights</h3>
+			<div class="timeline-container min-vh-100">
+				<div class="center-line">
+					<!-- <a href="#" class="scroll-icon"><i class="fas fa-code"></i></a> -->
 				</div>
-				<p>I received a certification (NC1) for Basic Electricity Installation and Maintenance at Dasmariñas National Highschool.</p>
-			</section>
-		</div>
-		<div class="date date-2">
-			<!-- 2nd Timeline -->
-			<section>
-				<i class="icon fas fa-briefcase"></i>
-				<div class="details">
-					<span class="title">
-						On-The-Job Trainee
-					</span>
-					<span>November 2017</span>
-				</div>
-				<p>I started my OJT at EMD Technologies Philippines (NEXEM) where I operate machines in Operation Department</p>
-			</section>
-		</div>
-		<div class="date date-1">
-			<!-- 3rd Timeline -->
-			<section>
-				<i class="icon fas fa-graduation-cap"></i></i>
-				<div class="details">
-					<span class="title">
-						Graduated from college
-					</span>
-					<span>April 2018</span>
-				</div>
-				<p>I graduated from Computer Engineering Technology (COET) at Technological University of the Philippines - Cavite Campus</p>
-			</section>
-		</div>
-		<div class="date date-2">
-			<!-- 4th Timeline -->
-			<section>
-				<i class="icon fas fa-laptop"></i></i>
-				<div class="details">
-					<span class="title">
-						Started my first job
-					</span>
-					<span>June 2018</span>
-				</div>
-				<p>I started my first job as Web Support Specialist at E-Guardian Philippines Inc., a Japanese BPO company</p>
-			</section>
-		</div>
-		<div class="date date-1">
-			<!-- 5th Timeline -->
-			<section>
-				<i class="icon fas fa-medal"></i></i>
-				<div class="details">
-					<span class="title">
-						My first job award
-					</span>
-					<span>December 2019</span>
-				</div>
-				<p>I was awarded as Team Player of the current year at my company, E-Guardian Philippines Inc.</p>
-			</section>
-		</div>
-		<div class="date date-2">
-			<!-- 6th Timeline -->
-			<section>
-				<i class="icon fas fa-medal"></i></i>
-				<div class="details">
-					<span class="title">
-						Another Job Award
-					</span>
-					<span>December 2020</span>
-				</div>
-				<p>The following year, I received two awards: Rain or Shine Awardee and Pinnacle Awardee</p>
-			</section>
-		</div>
-		<div class="date date-1">
-			<!-- 7th Timeline -->
-			<section>
-				<i class="icon fas fa-star"></i></i>
-				<div class="details">
-					<span class="title">
-						Promoted to Assistant TL
-					</span>
-					<span>July 2021</span>
-				</div>
-				<p>In my birth month, I was promoted to Assistant Team Leader</p>
-			</section>
-		</div>
-		<div class="date date-2">
-			<!-- 8th Timeline -->
-			<section>
-				<i class="icon fas fa-code"></i></i>
-				<div class="details">
-					<span class="title">
-						Zuitt Bootcamp
-					</span>
-					<span>Present</span>
-				</div>
-				<p>Now, I'm currently taking Web Development Bootcamp in Zuitt so that I can have a career in web development</p>
-			</section>
-		</div>
-	</div>
-	</div>
-		<!-- Timeline End -->
-
-		<!-- Projects Start -->
-		<div class="container-fluid text-center" id="project">
-			<h3>Projects</h3>
-		<div class="row d-md-block mt-md-5 carou-n-h3">
-			<div class="offset-xl-3 col-xl-6">
-				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="projects">
-							<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-caption d-md-block carousel-details">
-								<h5>E-commerce API</h5>
-								<p class="project-detail">This is where my Capstone 2 Project will be</p>
-							</div>
+				<div class="date date-1">
+					<!-- 1st Timeline -->
+					<section>
+						<i class="icon fas fa-certificate"></i>
+						<div class="details">
+							<span class="title">
+								Basic Electricity Installation and Maintenance
+							</span>
+							<span>September 2017 </span>
 						</div>
-						<div class="carousel-item">
-							<div class="projects">	
-							<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-caption d-md-block carousel-details">
-								<h5>Capstone 3</h5>
-								<p class="project-detail">This is where my Capstone 3 Project will be</p>
-							</div>
+						<p>I received a certification (NC1) for Basic Electricity Installation and Maintenance at Dasmariñas National Highschool.</p>
+					</section>
+				</div>
+				<div class="date date-2">
+					<!-- 2nd Timeline -->
+					<section>
+						<i class="icon fas fa-briefcase"></i>
+						<div class="details">
+							<span class="title">
+								On-The-Job Trainee
+							</span>
+							<span>November 2017</span>
 						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</button>
+						<p>I started my OJT at EMD Technologies Philippines (NEXEM) where I operate machines in Operation Department</p>
+					</section>
+				</div>
+				<div class="date date-1">
+					<!-- 3rd Timeline -->
+					<section>
+						<i class="icon fas fa-graduation-cap"></i>
+						<div class="details">
+							<span class="title">
+								Graduated from college
+							</span>
+							<span>April 2018</span>
+						</div>
+						<p>I graduated from Computer Engineering Technology (COET) at Technological University of the Philippines - Cavite Campus</p>
+					</section>
+				</div>
+				<div class="date date-2">
+					<!-- 4th Timeline -->
+					<section>
+						<i class="icon fas fa-laptop"></i>
+						<div class="details">
+							<span class="title">
+								Started my first job
+							</span>
+							<span>June 2018</span>
+						</div>
+						<p>I started my first job as Web Support Specialist at E-Guardian Philippines Inc., a Japanese BPO company</p>
+					</section>
+				</div>
+				<div class="date date-1">
+					<!-- 5th Timeline -->
+					<section>
+						<i class="icon fas fa-medal"></i>
+						<div class="details">
+							<span class="title">
+								My first job award
+							</span>
+							<span>December 2019</span>
+						</div>
+						<p>I was awarded as Team Player of the current year at my company, E-Guardian Philippines Inc.</p>
+					</section>
+				</div>
+				<div class="date date-2">
+					<!-- 6th Timeline -->
+					<section>
+						<i class="icon fas fa-medal"></i>
+						<div class="details">
+							<span class="title">
+								Another Job Award
+							</span>
+							<span>December 2020</span>
+						</div>
+						<p>The following year, I received two awards: Rain or Shine Awardee and Pinnacle Awardee</p>
+					</section>
+				</div>
+				<div class="date date-1">
+					<!-- 7th Timeline -->
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">
+								Promoted to Assistant TL
+							</span>
+							<span>July 2021</span>
+						</div>
+						<p>In my birth month, I was promoted to Assistant Team Leader</p>
+					</section>
+				</div>
+				<div class="date date-2">
+					<!-- 8th Timeline -->
+					<section>
+						<i class="icon fas fa-code"></i>
+						<div class="details">
+							<span class="title">
+								Zuitt Bootcamp
+							</span>
+							<span>Present</span>
+						</div>
+						<p>Now, I'm currently taking Web Development Bootcamp in Zuitt so that I can have a career in web development</p>
+					</section>
 				</div>
 			</div>
 		</div>
-	</div>
-		<!-- Projects End -->
-	</main>
-	<!-- Contact Me Start -->
-	<section id="contact">
-		<div class="text-center pt-5">
-					<h2>Contact Me</h2>
-					<div class="row pt-3">
-						<div class="offset-xl-5 col-lg-2 offset-lg-5 offset-md-4 col-md-4 col-sm-10 p-3">
-							<form> 
-								<!-- Name Start -->
-								<div class="form-group">
-								<label for="validationCustom01">Name</label>
-								      <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" required>
-								</div>
-								<!-- Name End -->
+		<!-- Timeline End -->
 
-								<!-- Email Start-->
-							  <div class="form-group">
-							    <label for="exampleFormControlInput1">Email address</label>
-							    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-							  </div>
-							  <!-- Email end -->
-							  <!-- Message Start -->
-							  <div class="form-group">
-							    <label for="exampleFormControlTextarea1">Message</label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-							  </div>
-							  <!-- Message End -->
-
-							  <button class="btn btn-dark" type="submit">Send Email</button>
-							</form>
-						</div>
+		<!-- Projects Section Start -->
+		<div class="container-fluid text-center p-5" id="project">
+			<h3>Projects</h3>
+			<!-- Project Card Start -->
+			<div class="row">
+				<div class="d-none d-lg-block col-lg-6 mt-5 px-5 order-2 proj-content">
+					<div class="img-proj">
+						<div class="overlay"></div>
 					</div>
-				</div>		
-	</section>
-	<!-- Contact Me End -->
-	<!-- Footer Starts -->
-	<footer id="footer">
-		<div>
+					<h4 class="text-center mb-1 mt-3">Capstone Project 2</h4>
+					<h5>This is where my Capstone 2 Project will be</h5>
+				</div>
+				<div class="d-none d-lg-block col-lg-6 mt-5 px-5 order-2">
+					<div class="img-proj">
+						<div class="overlay"></div>
+					</div>
+					<h4 class="text-center mb-1 mt-3">Capstone Project 3</h4>
+					<h5>This is where my Capstone 2 Project will be</h5>
+				</div>
+			</div>
+			<!-- Project Card End -->
+
+			<!-- Project Carousel Start -->
+			<div class="row d-md-block d-lg-none mt-md-5 carou-n-h3">
+				<div class="offset-xl-3 col-xl-6">
+					<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="projects">
+									<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-caption d-md-block carousel-details">
+									<h5>E-commerce</h5>
+									<p class="project-detail">This is where my Capstone 2 Project will be</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="projects">	
+									<img src="./image/TBA.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-caption d-md-block carousel-details">
+									<h5>Capstone 3</h5>
+									<p class="project-detail">This is where my Capstone 3 Project will be</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Project Carousel End -->
 		</div>
-	</footer>
-	<!-- Footer End -->
+		<!-- Projects Section End -->
+	</main>
+
+
+	<footer class="footer">
+		<!-- Jump To Section -->
+		<div class="container-fluid footer-content pt-4">
+		<div class="row">
+		        <div class="pt-0 pb-3 col-md-4 text-center">
+		        	<h4 class="jump-title">Jump to</h4>
+		        	<ul class="jump-to">
+		        		<li><a href="#about-me">About Me</a></li>
+		        		<li><a href="#highlights">Career Highlights</a></li>
+		        		<li><a href="#project">Projects</a></li>
+		        	</ul>
+		        </div>
+		        <!-- Jump To Section End -->
+		        <!-- My Links Section -->
+						<div class="pt-0 pb-3 col-md-4 text-center footer-links">
+							<a href="mailto:omsamarkj@gmail.com" class="my-email" target="_blank">osmamarkj@gmail.com</a>
+							<ul class="nav justify-content-center">
+					<li class="nav-item px-3">
+						<a href="https://www.facebook.com/mrkjsph.osm/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+					</li>
+					<li class="nav-item px-3">
+						<a href="https://gitlab.com/osmamarkj" target="_blank"><i class="fab fa-gitlab fa-3x"></i></a>
+					</li>
+					<li class="nav-item px-3">
+						<a href="https://www.linkedin.com/in/mark-joseph-osma-220831211/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+					</li>
+				</ul>
+						</div>
+						<!-- My Links Section End -->
+						<!-- Contact Me Section -->
+						<div class="pt-0 pb-3 col-md-4 footer-section" id="contact">
+							<h4 class="text-center email-me">Contact Me</h4>
+							<div class="m-0">
+					<div class="p-sm-1 text-center">
+						<form>
+							<div class="form-group">
+								<input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required placeholder="Your message"></textarea>
+							</div>
+							<button class="btn btn-outline-secondary btn-sm" type="submit">Send Email</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Contact Me Section -->
+		    </div>
+		</div>
+
+			<div class="containter-fluid text-center footer-copy">
+				<div class="col-12 py-1">
+					&#169;2022 MJ Osma
+				</div>
+				
+			</div>
+</footer>
+
+	<button id="bt-top">
+		<a href="#top">
+		<i class="fas fa-chevron-circle-up"></i>
+		</a>
+	</button>
 				
 
 			
