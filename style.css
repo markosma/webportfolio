@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*When clicking on links, the scroll will have a smooth transition*/
@@ -21,7 +22,7 @@ body {
 
 /* Navigation Bar */
 nav {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #11999E;
 }
 
@@ -33,7 +34,8 @@ nav {
 .navbar-light .navbar-nav .nav-link:hover{
 	color: #11999E;
 }
-.logo{
+.logo img{
+	width: 100px;
 	color: #11999E;
 }
 
@@ -45,14 +47,14 @@ nav {
 
 h1{
 	color: #067f91;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Roboto', sans-serif;
 	font-size: 8rem;
 	font-weight: 500;
 }	
 
 h1 + p{
 	color: #067f91;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
 }
 h3 {
@@ -60,6 +62,11 @@ h3 {
 	font-family: 'Baloo Chettan 2', cursive;
 	font-size: 3rem;
 	font-weight: 500;
+}
+
+.project-link a{
+	text-decoration: underline!important;
+	color: #067f91;
 }
 
 /*Image's z-index is -5 so that the bubble is stack up over the image*/
@@ -70,6 +77,7 @@ h3 {
 	margin-top: -50px;
 	z-index: -5;  
 }
+
 
 /* Bubble animation position */
 .bubbles{
@@ -181,6 +189,17 @@ h3 {
 	color: #fff;
 }
 
+.about-details{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.profile img{
+	padding: 5px;
+	border: 1px solid rgb(48, 213, 218);
+	box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.06);
+}
+
 #about-me h3{
 	font-family: 'Poppins', sans-serif;
 	color: #fff;
@@ -193,8 +212,20 @@ h3 {
 	letter-spacing: .1rem;
 	font-weight: 100;
 }
+
+.resume a{
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	padding: 15px;
+}
+
+.resume a:hover{
+	text-decoration: none;
+	background-color: rgba(16, 107, 95, 0.5);
+}
+
 .tools{
-	margin-top: 5%;
+	padding-top: 0;
 	border-bottom: 0.5px solid rgba(48,227,202,0.5);
 }
 
@@ -328,18 +359,12 @@ h3 {
 	padding-top: 5%;
 }
 
-.projects:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
+.carousel-item{
+	max-height: 100%;
 }
 
-.proj-content{
-	height: 31rem;
+.img-proj{
+	aspect-ratio: 16 / 5;
 }
 
 .project-title{
@@ -353,23 +378,35 @@ h3 {
 .img-proj{
 	width: 100%;
 	height: 82%;
-	background-image: url(./image/TBA.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: transform .5s ease;
 	cursor: pointer;
+	border: 1px solid #d5e7e4;
+}
+
+.proj-1{
+	background-image: url(./image/project-1.png);
+}
+
+.proj-2{
+	background-image: url(./image/project-2.png);
+}
+
+.proj-3{
+	background-image: url(./image/project-3.png);
 }
 
 .img-proj:hover{
 	transform: scale(1.05);
 }
-
+/* 
 .overlay{
 	height: 100%;
 	background-color: black;
 	opacity: 0.5;
-}
+} */
 .carousel-details{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -390,11 +427,11 @@ h3 {
 
 .jump-to a{
 	text-decoration: none;
-	color: #40514E;
+	color: #E4F9F5;
 }
 
 .jump-to a:hover{
-	color: #E4F9F5;
+	color: #40514E;
 	text-decoration: none;
 }
 
@@ -440,6 +477,10 @@ h3 {
 	background: #11999E;
 	border-color: #fff;
 	color: #E4F9F5 ;
+}
+
+.address{
+	color: #fff
 }
 
 /* Botton to Top */
@@ -495,6 +536,10 @@ h3 {
 	.date-1 section .icon{
 		left: -60px;
 	}
+
+	.about-details{
+		flex-direction: column;
+	}
 }
 
 /*When the screen reaches 439px and below, the center line or path and icons will disappear and the highlights will stack up on each other*/
@@ -513,6 +558,14 @@ h3 {
 @media(max-width: 500px){
 	.project-detail{
 		display: none!important;
+	}
+}
+
+@media(min-width: 1020px){
+	.about-content{
+		margin-top: 45px;
+		margin-left: 0;
+		margin-right: 100px;
 	}
 }
 
