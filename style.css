@@ -387,15 +387,15 @@ h3 {
 }
 
 .proj-1{
-	background-image: url(./image/project-1.png);
+	background-image: url('./image/project-1.png');
 }
 
 .proj-2{
-	background-image: url(./image/project-2.png);
+	background-image: url('./image/project-2.png');
 }
 
 .proj-3{
-	background-image: url(./image/project-3.png);
+	background-image: url('./image/project-3.png');
 }
 
 .img-proj:hover{
@@ -513,7 +513,7 @@ h3 {
 /* Copyright */
 .footer-copy{
 	background: #40514E;
-	color: #11999E;
+	color: #fff;
 	font-weight: 500;
 }
 
