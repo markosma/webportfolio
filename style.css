@@ -225,8 +225,7 @@ h3 {
 }
 
 .tools{
-	padding-top: 0;
-	border-bottom: 0.5px solid rgba(48,227,202,0.5);
+	border-top: 0.5px solid rgba(48,227,202,0.5);
 }
 
 /* Timeline */
