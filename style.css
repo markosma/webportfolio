@@ -39,6 +39,11 @@ nav {
 	color: #11999E;
 }
 
+.nav-link:hover{
+	transition: all .5s ease;
+	transform: scale(1.3);
+}
+
 /* Title Page */
 
 .container-fluid {
@@ -216,6 +221,7 @@ h3 {
 .resume a{
 	color: #fff;
 	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
 	padding: 15px;
 }
 
@@ -383,6 +389,10 @@ h3 {
 	transition: transform .5s ease;
 	cursor: pointer;
 	border: 1px solid #d5e7e4;
+}
+
+.proj-content a:hover{
+	text-decoration: none!important;
 }
 
 .proj-1{
