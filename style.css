@@ -208,7 +208,7 @@ h3 {
 #about-me h3{
 	font-family: 'Poppins', sans-serif;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .about-content p{
@@ -235,6 +235,10 @@ h3 {
 }
 
 /* Timeline */
+
+#highlights{
+	font-family: 'Poppins', sans-serif;
+}
 
 .timeline-container {
 	max-width:  1080px;
@@ -346,7 +350,7 @@ h3 {
 }
 
 .title, .title ~ span{
-	color: #40514E;
+	color: #0d7a7e;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -361,7 +365,11 @@ h3 {
 
 #project{
 	background: #fff;
-	padding-top: 5%;
+	padding-top: 2%;
+}
+
+#project h3{
+	font-family: 'Poppins', sans-serif;
 }
 
 .carousel-item{
@@ -373,7 +381,8 @@ h3 {
 }
 
 .project-title{
-	color: #40514E;
+	color: #0f7b7f;
+	font-weight: 500;
 }
 
 .proj-card-detail{
@@ -410,12 +419,6 @@ h3 {
 .img-proj:hover{
 	transform: scale(1.05);
 }
-/* 
-.overlay{
-	height: 100%;
-	background-color: black;
-	opacity: 0.5;
-} */
 .carousel-details{
 	font-family: 'Montserrat', sans-serif;
 }
